@@ -18,9 +18,7 @@ const Home: NextPage = () => {
   if (session) {
     return (
       <div className='flex flex-col justify-center w-screen'>
-        <p className='text-center'>
-          Signed in as {session?.token?.email}
-        </p>
+        <p className='text-center'>Signed in</p>
         <hr />
         <button className='text-orange-900 text-2xl' onClick={() => getMyTopTracks()}>Beware False Renunciates</button>
         {tracks.map((track) => (
