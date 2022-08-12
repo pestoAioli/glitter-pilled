@@ -33,7 +33,7 @@ const Home: NextPage = () => {
   }
   return (
     <div className='flex flex-col justify-center w-screen h-screen'>
-      <button onClick={() => signIn()}>Log in to your spotify to enter </button>
+      <button onClick={() => signIn()}>Log in to your spotify to enter! </button>
     </div>
   )
 }
