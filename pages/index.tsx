@@ -26,7 +26,9 @@ const Home: NextPage = () => {
         {tracks.map((track) => (
           <div className='flex flex-col justify-between items-center' key={track.id}>
             <h1 className='text-center'>{track.name}</h1>
-            <img src={track.images[0].url} className='w-20' />
+            <picture>
+              <img src={track.images[0].url} className='w-40' />
+            </picture>
           </div>
         ))}
         <button onClick={() => signOut()}>Sign Out</button>
