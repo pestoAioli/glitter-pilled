@@ -27,7 +27,7 @@ const Home: NextPage = () => {
           <div className='flex flex-col justify-between items-center' key={track.id}>
             <h1 className='text-center'>{track.name}</h1>
             <picture>
-              <img src={track.images[0].url} className='w-40' />
+              <img src={track.images[0].url} alt='picture' className='w-40' />
             </picture>
           </div>
         ))}

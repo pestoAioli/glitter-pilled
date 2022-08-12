@@ -7,7 +7,7 @@ const TOKEN_ENDPOINT = `https://accounts.spotify.com/api/token`;
 const TOP_ARTISTS_ENDPOINT = `https://api.spotify.com/v1/me/top/artists`;
 
 
-const getAccessToken = async (refresh_token): String => {
+const getAccessToken = async (refresh_token) => {
   const res = await fetch(TOKEN_ENDPOINT, {
     method: 'POST',
     headers: {
