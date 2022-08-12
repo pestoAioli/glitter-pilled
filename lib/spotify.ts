@@ -24,7 +24,7 @@ const getAccessToken = async (refresh_token) => {
   return res.json();
 }
 
-export const getTopTracks = async (refresh_token): JWTString => {
+export const getTopTracks = async (refresh_token) => {
   const { access_token } = await getAccessToken(refresh_token);
   return fetch(TOP_ARTISTS_ENDPOINT, {
     method: 'GET',
