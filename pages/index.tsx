@@ -1,7 +1,6 @@
 import type { NextPage } from 'next'
 import { useSession, signIn, signOut } from 'next-auth/react'
 import { useState } from 'react';
-import { getTopTracks } from '../lib/spotify';
 
 
 const Home: NextPage = () => {
@@ -13,7 +12,6 @@ const Home: NextPage = () => {
     const { items } = await res.json();
     setTracks(items);
   }
-
 
   if (session) {
     return (
